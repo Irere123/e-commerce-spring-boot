@@ -1,5 +1,6 @@
 package org.cat.irere.controllers;
 
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.cat.irere.dto.AddToCartDTO;
 import org.cat.irere.dto.ApiResponse;
 import org.cat.irere.dto.CartItemDTO;
@@ -12,6 +13,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/cart")
+@Tag(name = "Cart", description = "Shopping cart management API")
 public class CartController {
 
     private final CartService cartService;

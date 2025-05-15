@@ -1,5 +1,6 @@
 package org.cat.irere.controllers;
 
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.cat.irere.dto.ApiResponse;
 import org.cat.irere.dto.QuantityDTO;
 import org.cat.irere.service.QuantityService;
@@ -11,6 +12,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/quantities")
+@Tag(name = "Quantity", description = "Product quantity management API")
 public class QuantityController {
 
     private final QuantityService quantityService;

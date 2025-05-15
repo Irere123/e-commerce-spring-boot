@@ -1,5 +1,6 @@
 package org.cat.irere.controllers;
 
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.cat.irere.dto.AddToCartDTO;
 import org.cat.irere.dto.ApiResponse;
 import org.cat.irere.dto.PurchaseDTO;
@@ -12,6 +13,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/purchases")
+@Tag(name = "Purchase", description = "Purchase management API")
 public class PurchaseController {
 
     private final PurchaseService purchaseService;
